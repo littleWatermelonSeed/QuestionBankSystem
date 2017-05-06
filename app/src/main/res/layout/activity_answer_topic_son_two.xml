@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.studentfragment.www.AnswerTopicSonTwoActivity">
+
+    <cn.mywidget.www.www.BackActionbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="你已近做过该题集了，以下是答题成绩" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="题目数量：" />
+
+        <TextView
+            android:id="@+id/activity_answer_topic_son_two_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="正确：" />
+
+        <TextView
+            android:id="@+id/activity_answer_topic_son_two_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="错误：" />
+
+        <TextView
+            android:id="@+id/activity_answer_topic_son_two_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="正确题目："
+                android:textColor="@color/denglu"/>
+
+            <TextView
+                android:id="@+id/activity_answer_topic_son_two_rNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="一道题都没有答对哟~辣鸡"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/activity_answer_topic_son_two_rightlistvie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="错误题目："
+                android:textColor="@color/denglu"/>
+
+            <TextView
+                android:id="@+id/activity_answer_topic_son_two_eNo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="一道题都没有答错哟~NB"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/activity_answer_topic_son_two_errorlistvie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

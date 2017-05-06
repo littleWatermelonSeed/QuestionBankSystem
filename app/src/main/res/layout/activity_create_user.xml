@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.createuser.www.CreateUserActivity">
+
+    <cn.mywidget.www.www.BackActionbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："/>
+        <EditText
+            android:id="@+id/activity_create_user_id"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:inputType="number"
+            android:maxLength="12"
+            android:hint="最小7位，最多12位"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："/>
+        <EditText
+            android:id="@+id/activity_create_user_password"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:maxLength="15"
+            android:hint="最小7位，最多15位"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码："/>
+        <EditText
+            android:id="@+id/activity_create_user_againPassword"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:maxLength="15"
+            android:hint="最小7位，最多15位"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密保问题："/>
+        <EditText
+            android:id="@+id/activity_create_user_question"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:hint="用于找回密码"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密保答案："/>
+        <EditText
+            android:id="@+id/activity_create_user_answer"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："/>
+        <EditText
+            android:id="@+id/activity_create_user_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/activity_create_user_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/activity_create_user_radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生"
+            android:checked="true"
+            android:button="@drawable/radio_button_style"/>
+        <RadioButton
+            android:id="@+id/activity_create_user_radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_button_style"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/activity_create_user_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

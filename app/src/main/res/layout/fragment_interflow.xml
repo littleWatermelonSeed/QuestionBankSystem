@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.studentfragment.www.InterflowFragment">
+
+    <TextView
+        android:id="@+id/fragment_interflow_text"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/fragment_interflow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

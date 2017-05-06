@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="261dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/zhanghaotoumingkuang"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="账号"/>
+
+        <EditText
+            android:id="@+id/activity_login_zhanghao"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:textColor="@null"
+            android:inputType="number"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="261dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/zhanghaokuangshangbian" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/zhanghaokuangshangbian" />
+
+        <TextView
+            android:id="@+id/suo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="密码"/>
+
+        <EditText
+            android:id="@+id/activity_login_mima"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/suo"
+            android:background="@null"
+            android:textColor="@null"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <RadioGroup
+            android:id="@+id/activity_login_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_login_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生"
+                android:checked="true"
+                android:button="@drawable/radio_button_style"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/activity_login_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教师"
+                android:button="@drawable/radio_button_style"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_login_denglu"
+        android:layout_width="261dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yuanjiaojuxing"
+        android:text="登录"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/activity_login_xinjian"
+        android:layout_width="261dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yuanjiaojuxing"
+        android:text="注册"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/activity_login_xinjian"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="创建新用户" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/activity_login_xinjian"-->
+            <!--android:src="@drawable/zuobianxian" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/activity_login_xinjian"-->
+            <!--android:src="@drawable/youbianxian" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/activity_login_jizhuwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="记住我"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/activity_login_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:text="忘记密码"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

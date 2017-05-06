@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="denglu">#0cbea0</color>
+    <color name="wuse">#00ffffff</color>
+    <color name="black">#121111</color>
+    <color name="white">#faf6f6</color>
+    <color name="gray">#d7d5d5</color>
+    <color name="deepgr">#9b9999</color>
+    <color name="red">#e21f1f</color>
+    <color name="yellow">#f5cd03</color>
+    <color name="green">#01fd3c</color>
+    <color name="blue">#0798ff</color>
+    <color name="shense">#412d2d</color>
+</resources>

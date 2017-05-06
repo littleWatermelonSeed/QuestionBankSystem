@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.cn.teacherfragment.teacherfragment.StudentParticularActivity">
+
+    <cn.mywidget.www.www.BackActionbar
+        android:id="@+id/activity_fragment_student_delete_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/activity_fragment_student_delete_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:maxLength="15"
+        android:layout_below="@id/activity_fragment_student_delete_one"/>
+
+    <TextView
+        android:id="@+id/activity_fragment_student_delete_textview"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/activity_fragment_student_delete_title"/>
+
+    <ListView
+        android:id="@+id/activity_fragment_student_delete_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_fragment_student_delete_deleteall"
+        android:layout_below="@+id/activity_fragment_student_delete_textview">
+    </ListView>
+
+    <Button
+        android:id="@+id/activity_fragment_student_delete_deleteall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="一键删除"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

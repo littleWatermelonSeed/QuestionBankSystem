@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sayhellototheworld.littlewatermelon.questionbanksystem">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="cn.login.www.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.student.www.StudentActivity" />
+        <activity android:name="cn.teacher.TeacherActivity" />
+        <activity android:name="cn.createuser.www.CreateUserActivity" />
+        <activity android:name="cn.setting.www.SettingActivity" />
+        <activity android:name="cn.changepassword.www.ChangePasswordActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankUploadkActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankAmendActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankQueryActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankDeleteActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.StudentRoughlyActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.StudentParticularActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.StudentDeleteActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankAmendSonActivity" />
+        <activity android:name="cn.share.www.AmendTopicActivity" />
+        <activity android:name="cn.studentfragment.www.AnswerStudentTopicActivity" />
+        <activity android:name="cn.studentfragment.www.AnswerTeacherTopicActivity" />
+        <activity android:name="cn.studentfragment.www.AnswerTopicSonOneActivity" />
+        <activity android:name="cn.studentfragment.www.AnswerTopicSonTwoActivity" />
+        <activity android:name="cn.studentfragment.www.UploadingUpActivity" />
+        <activity android:name="cn.studentfragment.www.UploadingAmendActivity" />
+        <activity android:name="cn.studentfragment.www.UploadingDeleteActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.BankQuerySonActivity" />
+        <activity android:name="cn.cn.teacherfragment.teacherfragment.StudentRoughlySonActivity" />
+        <activity android:name="cn.share.www.InterFlowTwoActivity" />
+        <activity android:name="cn.share.www.InterFlowThreeActivity" />
+        <activity android:name="cn.forgetpassword.www.ForgetPasswordActivity"></activity>
+    </application>
+
+</manifest>

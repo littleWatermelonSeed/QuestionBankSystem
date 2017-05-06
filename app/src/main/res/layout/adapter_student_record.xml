@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/adapter_student_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/adapter_student_record_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生姓名："
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/adapter_student_record_studentName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/adapter_student_record_left"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/adapter_student_record_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正确率："
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/adapter_student_record_studentName"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/adapter_student_record_zhengquelv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/adapter_student_record_right"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.studentfragment.www.AnswerTopicSonOneActivity">
+
+    <cn.mywidget.www.www.BackActionbar
+        android:id="@+id/activity_answer_topic_son_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/activity_answer_topic_son_two"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/activity_answer_topic_son_one"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/activity_answer_topic_son_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="》"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_answer_topic_son_three"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/activity_answer_topic_son_two"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="第" />
+
+        <TextView
+            android:id="@+id/activity_answer_topic_son_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="题：" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_answer_topic_son_five"
+        android:layout_below="@+id/activity_answer_topic_son_three"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_answer_topic_son_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/activity_answer_topic_son_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/activity_answer_topic_son_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上一题"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:id="@+id/activity_answer_topic_son_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下一题"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_answer_topic_son_five"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_answer_topic_son_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交答案"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.studentfragment.www.UploadingUpActivity">
+
+    <cn.mywidget.www.www.BackActionbar
+        android:id="@+id/upload_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/upload_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/upload_one"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="题集名称："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/activity_uploading_up_topicname"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upload_three"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/upload_two"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/upload_three"
+        android:layout_above="@+id/upload_four"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="题目：" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/kuang8"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <EditText
+                    android:id="@+id/activity_uploading_up_timu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/wuse"
+                    android:gravity="left|top"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答案：" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正确答案：" />
+
+                    <EditText
+                        android:id="@+id/activity_uploading_up_zhengquedaan"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="错误答案：" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="@color/red"
+                            android:text="(不同答案之间以空格形式隔开)"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/kuang8"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:id="@+id/activity_uploading_up_cuowudaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/wuse"
+                            android:gravity="left|top"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upload_five"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/upload_four"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/upload_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_uploading_up_chakanyijiaotimu"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="5dp"
+            android:text="查看/修改已提交题目"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/activity_uploading_up_tijiaobenti"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="5dp"
+            android:text="提交本题"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/activity_uploading_up_wanchengdaoru"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:text="完成题目导入"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>
